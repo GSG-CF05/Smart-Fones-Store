@@ -6,9 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="products.css" />
     <title>Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+   // icon Library
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 <body>
-    
+    <section class="continar-all-page">
+        <!-- header for mobile and ipad  -->
+        <header>
+        <i class="ri-arrow-left-s-line"></i>
+          <form class="search-form">
+            <img class = "search-icon"src="/image/Search.svg" alt="" />
+            <input
+              type="text"
+              placeholder="    Search"
+              class="search-input"
+            />
+          </form>
+  
+  <!-- menu element "mobile and ipad " -->
+          <a  class ="menu-icon "href="#" onclick="displayDrawer()" style="text-decoration: none"><i class="ri-menu-line"></i></a>
+          <div id="drawer" style="display: none" >
+                  <div class="drawerMenu">
+                    <div class="xDiv">
+                      <button class="xMark" onclick="displayDrawer()">X</button>
+                    </div>
+                    <ul class="menu-element">
+                      <li><i class="ri-home-4-fill"></i> Home</li>
+                      <li><i class="ri-shopping-bag-fill"></i>My Cart</li>
+                      <li><i class="ri-information-fill"></i>About Us</li>
+                    </ul>
+                    <ul class="social-media-link">
+                      <li><i class="ri-facebook-circle-fill"></i> </li>
+                      <li><i class="ri-instagram-fill"></i></li>
+                      <li><i class="ri-twitter-fill"></i></li>
+                    </ul>
+
+        </header>
+        <!--  **************************** -->
+        <h2>Our Top Products</h2>
+      </section>
     <script src="products.js"></script>
 </body>
 </html>
