@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 100%;
+    position: relative;
+}
+.header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem;
+}
+a.logo {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.fa-bars {
+  font-size: 22px;
+}
+
+
+input {
+  width: 190px;
+  height: 34px;
+  padding-left: 40px;
+  margin-top: 7px;
+  margin-right: 16px;
+  border-width: 0.3px;
+  border-radius: 8px;
+}
+
+.fa-x {
+  font-size: 22px;
+}
+.xDiv {
+  text-align: right;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  margin-right: 293px;
+}
+#drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  width: 480px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 6px 16px 4px rgba(0, 0, 0, 0.61);
+}
+li {
+  color: #162964;
+  list-style-type: none;
+  font-weight: bold;
+  margin-left: 25px;
+  line-height: 2.4rem;
+}
+.drawerI {
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.fa-info-circle {
+  margin-bottom: 35px;
+}
+.social {
+  margin-right: 20px;
+  font-size: 30px;
+}
