@@ -166,3 +166,35 @@ let arrayForPrice = [
       });
   }
   
+  
+function setItemLocal(e) {
+    e.preventDefault();
+    //! get value from html element
+    let mobileImg = e.target.parentElement.parentElement.children[0].src;
+    let mobileName = e.target.parentElement.parentElement.children[1].textContent;
+    let mobilePrice = e.target.parentElement.firstElementChild.textContent;
+  
+    //! Get the array if it exists in LocalStorage
+  
+    let arrayLocalStorage = JSON.parse(localStorage.getItem("arrayLocalStorage"));
+  
+    //! If the array actually contains elements, the elements will be added directly without creating elements
+    if (arrayLocalStorage) {
+      let data = { mobileImg, mobileName, mobilePrice };
+      arrayLocalStorage.push(data);
+      localStorage.setItem(
+        "arrayLocalStorage",
+        JSON.stringify(arrayLocalStorage)
+      );
+  
+      //! If the array has no elements, the array is created and the data is added
+    } else {
+      let arrayLocalStorage = [];
+      let data = { mobileImg, mobileName, mobilePrice };
+      arrayLocalStorage.push(data);
+      localStorage.setItem(
+        "arrayLocalStorage",
+        JSON.stringify(arrayLocalStorage)
+      );
+    }
+  }
