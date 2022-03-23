@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #162964;
+}
+
+section.continar-all-page {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+}
+/************** start header ******************/
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+.ri-arrow-left-s-line {
+  cursor: pointer;
+  font-size: 28px;
+}
+/************ start search form ******************/
+form {
+  height: 35px;
+  width: 190px;
+  position: relative;
+}
+header form .search-icon {
+  position: absolute;
+  right: 8%;
+  top: 23%;
+}
+header form .search-input {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  border-color: #6d6d6d;
+  border: 1px solid #6d6d6d;
+}
+/************ end search form ******************/
+
+/************ start drawer menu ******************/
+
+.xMark {
+  border: none;
+  background: none;
+  margin-right: 4px;
+  font-weight: bolder;
+}
+.xDiv {
+  text-align: right;
+  margin-bottom: 20px;
+  margin-right: 290px;
+}
+#drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  width: 480px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 6px 16px 4px rgba(0, 0, 0, 0.61);
+}
+li {
+  color: #162964;
+  list-style-type: none;
+  font-weight: bold;
+  margin-left: 15px;
+  line-height: 2.4rem;
+}
+.drawerI {
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+.fa-info-circle {
+  margin-bottom: 25px;
+}
+.social-media-link {
+  display: flex;
+  margin-left: 1.8%;
+  margin-top: 15px;
+}
+.social-media-link  a i {
+  font-size: 20px;
+  padding-left: 5px;
+  }
+
+.menu-element i {
+  padding-right: 9px;
+  font-size: 20px;
+
+}
+/************ end drawer menu ******************/
+
+
+/************ Start nav for  desktop ***********************/
+nav {
+  display: none;
+}
+.social-media {
+  display: none;
+}
+/************ End nav for desktop ***********************/
+
+/************** End header ******************/
+
