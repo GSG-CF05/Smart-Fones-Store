@@ -5,10 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Home Page</title>
 </head>
 <body>
+    <header>
+        <div class="header">
+          <img src="/images/gadgets 1.png" class="logo" alt="logo" />
+          <div class="horz-menu">
+            <ul>
+              <!-- link  لا تنسى -->
+              <a href="#">Home</li></a>
+              <a href="/cartPage/cart.html">My Cart</li></a>
+              <a href="/aboutPage/about.html">About Us</li></a>
+            </ul>
+          </div>
+          <a href="#" onclick="displayDrawer()"><i class="fa fas fa-bars"></i></a>
+        </div>
+        <div id="drawer" style="display: none">
+          <div class="drawerMenu">
+            <div class="xDiv">
+              <i class="fa-solid fa-x" onclick="displayDrawer()"></i>
+            </div>
+  
+            <ul>
+              <!-- لاتنسى link -->
+              <a href="#"></a><li><i class="fa fa-home drawerI"></i> Home</li></a>
+              <a href="/cartPage/cart.html"></a><li><i class="fa fa-shopping-bag drawerI"></i>My Cart</li></a>
+              <a href="/aboutPage/about.html"></a><li><i class="fa fa-info-circle drawerI"></i>About Us</li></a>
+              <li>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter social"></i></a>
+              </li>
+            </ul>
+            <!-- link here-->
+          </div>
+        </div>
+      </header>
     <div class="container">
         <div class="slider">
             <picture>  
