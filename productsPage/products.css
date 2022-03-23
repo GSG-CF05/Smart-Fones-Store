@@ -222,3 +222,75 @@ div.all-item {
 }
 /***************end media for ipad *****************/
 
+/***************Start media for desktop *****************/
+@media screen and (min-width: 1024px) {
+  header {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .menu-icon {
+    display: none;
+  }
+  nav {
+    visibility: visible;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+  }
+  nav li a {
+    text-decoration: none;
+    color: #162964;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  form {
+    width: 400px;
+  }
+  .all-item {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  h2 {
+    margin-left: 3%;
+  }
+  .ri-shopping-bag-fill {
+    font-size: 35px;
+  }
+  section {
+    background-color: white;
+  }
+  .product-item {
+    width: calc(86% / 4);
+    height: 295;
+    margin-top: 40px;
+  }
+  .product-item .product-img {
+    margin-top: 20px;
+  }
+
+  .product-name {
+    margin-left: 12%;
+  }
+  .dollar {
+    margin-right: 120px;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    width: 70px;
+    border-radius: 15px;
+    height: 250px;
+    position: fixed;
+    right: -20px;
+    top: 240px;
+  }
+  .social-media a {
+    text-decoration: none;
+    color: #162964;
+  }
+}
+/***************End media for desktop *****************/
