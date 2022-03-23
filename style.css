@@ -36,7 +36,7 @@ a:visited {
 .fa-x {
   font-size: 22px;
 }
-.xDiv {
+.x-div {
   text-align: right;
   margin-top: 22px;
   margin-bottom: 20px;
@@ -63,7 +63,7 @@ li {
   margin-left: 25px;
   line-height: 2.4rem;
 }
-.drawerI {
+.drawer-i {
   margin-right: 10px;
   margin-bottom: 12px;
 }
@@ -99,44 +99,44 @@ li {
 }
 /*                                          splash                                         */
 .splash {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #1a264a;
-    z-index: 1;
-    text-align: center;
-    line-height: 110vh;
-    transition: all 0.5s;
-    z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a264a;
+  z-index: 1;
+  text-align: center;
+  line-height: 110vh;
+  transition: all 0.5s;
+  z-index: 4;
+}
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a264a;
+  z-index: -10;
+  text-align: center;
+  line-height: 110vh;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
-  .splash.display-none {
-    position: fixed;
-    opacity: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #1a264a;
-    z-index: -10;
-    text-align: center;
-    line-height: 110vh;
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-  .fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
 /*                       slider                           */
 
 .slider img {
-    margin-top: 10px;
+  margin-top: 10px;
   min-width: 25rem;
   max-height: 14rem;
   object-fit: cover;
@@ -173,9 +173,51 @@ li {
   left: 1.5rem;
 }
 
+/*                               brandsCards                              */
+h3 {
+  color: #162964;
+  margin: 15px 0px;
+  font-size: 25px;
+}
+hr {
+  height: 1px;
+  text-align: center;
+  width: 50%px;
+  margin-left: 41% !important;
+  margin-right: 41% !important;
+  margin-bottom: 20px;
+  background-color: #162964;
+}
+
+#brands-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.brand-card {
+  width: 110px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 6px;
+  text-align: center;
+  padding-top: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 21px;
+  color: #162964;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.brand-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
 /*                              media                  */
 @media (max-width: 1023px) {
-  #socialMedia {
+  #social-media {
     display: none !important;
   }
   .horz-menu {
@@ -198,25 +240,25 @@ li {
   .horz-menu {
     left: 300px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 92%;
-    top: 50%;
+    top: 35%;
   }
-  #brandsCards {
-    padding-left: 220px;
-    padding-right: 230px;
+  #brands-cards {
+    padding-left: 235px;
+    padding-right: 285px;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1100px) {
   .fa-bars {
     display: none;
   }
@@ -226,23 +268,53 @@ li {
     text-align: center;
   }
   .horz-menu {
-    left: 360px;
+    left: 340px;
   }
-  #brandsCards {
-    padding-left: 320px;
-    padding-right: 220px;
+  #brands-cards {
+    padding-left: 291px;
+    padding-right: 300px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 92%;
-    top: 50%;
+    top: 35%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fa-bars {
+    display: none;
+  }
+
+  h3,
+  hr {
+    text-align: center;
+  }
+  .horz-menu {
+    left: 380px;
+  }
+  #brands-cards {
+    padding-left: 350px;
+    padding-right: 349px;
+  }
+  #social-media {
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    left: 92%;
+  }
+  #social-media ul {
+    margin-top: 35px;
+  }
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
@@ -255,21 +327,20 @@ li {
   hr {
     text-align: center;
   }
-  #brandsCards {
-    padding-left: 430px;
-    padding-right: 300px;
+  #brands-cards {
+    padding-left: 406px;
+    padding-right: 410px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 92%;
-    top: 50%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
@@ -281,21 +352,21 @@ li {
   hr {
     text-align: center;
   }
-  #brandsCards {
-    padding-left: 490px;
-    padding-right: 330px;
+  #brands-cards {
+    padding-left: 454px;
+    padding-right: 440px;
   }
-  #socialMedia {
+
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 94%;
-    top: 50%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
@@ -308,21 +379,20 @@ li {
     text-align: center;
     padding-left: 30px;
   }
-  #brandsCards {
-    padding-left: 560px;
-    padding-right: 370px;
+  #brands-cards {
+    padding-left: 519px;
+    padding-right: 493px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 95%;
-    top: 50%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
@@ -334,21 +404,20 @@ li {
   hr {
     text-align: center;
   }
-  #brandsCards {
-    padding-left: 610px;
-    padding-right: 420px;
+  #brands-cards {
+    padding-left: 558px;
+    padding-right: 542px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 95%;
-    top: 50%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
@@ -361,21 +430,20 @@ li {
   hr {
     text-align: center;
   }
-  #brandsCards {
-    padding-left: 680px;
-    padding-right: 450px;
+  #brands-cards {
+    padding-left: 610px;
+    padding-right: 588px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 95%;
-    top: 50%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
@@ -388,21 +456,20 @@ li {
     text-align: center;
     margin-left: 30px;
   }
-  #brandsCards {
-    padding-left: 720px;
-    padding-right: 500px;
+  #brands-cards {
+    padding-left: 674px;
+    padding-right: 635px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 95%;
-    top: 50%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }
@@ -414,21 +481,20 @@ li {
   hr {
     text-align: center;
   }
-  #brandsCards {
-    padding-left: 800px;
-    padding-right: 550px;
+  #brands-cards {
+    padding-left: 705px;
+    padding-right: 691px;
   }
-  #socialMedia {
+  #social-media {
     text-align: center;
     justify-content: center;
     position: fixed;
     left: 95%;
-    top: 50%;
   }
-  #socialMedia ul {
+  #social-media ul {
     margin-top: 35px;
   }
-  #socialMedia ul li {
+  #social-media ul li {
     margin-bottom: 15px;
   }
 }

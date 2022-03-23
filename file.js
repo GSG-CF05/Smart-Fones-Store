@@ -48,3 +48,60 @@ function nextSlide() {
   slider.style.transform = `translateX(${-size * counter}px)`;
 }
 setInterval(nextSlide, 2000);
+
+
+
+// Get the brand cards div
+let brandsCards = document.getElementById("brands-cards");
+// Get the products cards div
+let productsCards = document.getElementsByClassName("products-cards")[0];
+let productsCardsContainer = document.getElementsByClassName("top-products")[0];
+
+// Specify What brands do you want to select form the api
+let topBrands = [
+  "Apple",
+  "Google",
+  "Huawei",
+  "Samsung",
+  "Sony",
+  "Xiaomi",
+  "Honor",
+  "Toshiba",
+  "Realme",
+  "BlackBerry",
+  "HTC",
+  "Lenovo",
+];
+
+// Get the selected brands information from the api
+function fetchTopBrands() {
+  fetch("https://api-mobilespecs.azharimm.site/v2/brands")
+    .then((res) => res.json())
+    .then((brandsData) => {
+      let brands = [];
+      for (let i = 0; i < topBrands.length; i++) {
+        brands.push(findBrandByBrandName(brandsData, topBrands[i]));
+      }
+      // create the brands cards
+      brands.forEach((item) => {
+        let brandCard = document.createElement("a");
+        brandCard.setAttribute("class", "brand-card");
+        brandsCards.appendChild(brandCard);
+        brandCard.setAttribute(
+          "href",
+            "/productspage/products.html?brandSlug=" +
+            item.brand_slug
+        );
+        let brandTitle = document.createElement("h4");
+        brandTitle.textContent = item.brand_name;
+        brandCard.appendChild(brandTitle);
+      });
+    });
+}
+
+// execute the code to get the Top brands
+fetchTopBrands();
+// find the brand in the fetched brands data from the api
+function findBrandByBrandName(brandsData, brandName) {
+  return brandsData.data.find((brand) => brand.brand_name === brandName);
+}
