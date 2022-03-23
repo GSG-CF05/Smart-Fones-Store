@@ -199,7 +199,26 @@ div.all-item {
   cursor: pointer;
 }
 /************** End card item   ******************/
-
-
 /***************End page content*****************/
+
+/***************start media for ipad *****************/
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 260px;
+  }
+  .ri-shopping-bag-fill {
+    font-size: 30px;
+  }
+  .product-item {
+    width: calc(96% / 3);
+  }
+  .product-name {
+    margin-left: 12%;
+  }
+  .dollar {
+    margin-right: 120px;
+  }
+}
+/***************end media for ipad *****************/
 
