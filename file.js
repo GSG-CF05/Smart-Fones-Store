@@ -105,3 +105,64 @@ fetchTopBrands();
 function findBrandByBrandName(brandsData, brandName) {
   return brandsData.data.find((brand) => brand.brand_name === brandName);
 }
+
+let arrayForPrice = [
+    799, 1199, 869, 999, 819, 849, 949, 709, 769, 629, 599, 689, 950, 699, 1399,
+    1100, 750, 670,
+  ];
+  
+  // Get the latest products from the api
+  fetchLatestProducts();
+  function fetchLatestProducts() {
+    fetch("https://api-mobilespecs.azharimm.site/v2/latest")
+      .then((res) => res.json())
+      .then((productsData) => {
+        // create the cards products
+        let i = 0;
+        productsData.data.phones.forEach((item) => {
+          let productCardDiv = document.createElement("div");
+          productCardDiv.setAttribute("class", "slide");
+          productsCards.appendChild(productCardDiv);
+          let productCard = document.createElement("div");
+          productCardDiv.appendChild(productCard);
+          productCard.setAttribute("class", "productCard");
+          let productImg = document.createElement("img");
+          productCard.appendChild(productImg);
+          productImg.setAttribute("class", "productImg");
+          productImg.setAttribute("src", item.image);
+          let productTitle = document.createElement("h4");
+          productCard.appendChild(productTitle);
+          productTitle.setAttribute("class", "productTitle");
+          productTitle.textContent = item.phone_name;
+          // !  price   and cart icon  continar
+  
+          let priceAndCartContinar = document.createElement("div");
+          priceAndCartContinar.setAttribute("class", "price-and-add-to-cartIcon");
+          productCard.appendChild(priceAndCartContinar);
+  
+          // ! create price and add value from {"arrayForPrice " /  line  9 /    }
+  
+          let productPrice = document.createElement("p");
+          productPrice.textContent = "$" + arrayForPrice[i]; // price();
+          productPrice.setAttribute("class", "price");
+          priceAndCartContinar.appendChild(productPrice);
+  
+          // !  "   create add to cart  "  icon
+  
+          let addToCartIcon = document.createElement("img");
+          //  addToCartIcon.src = "image/addToCart.svg";
+          addToCartIcon.src = "addToCart.png";
+  
+          priceAndCartContinar.appendChild(addToCartIcon);
+          addToCartIcon.setAttribute("class", "add-to-cart");
+  
+          //?  part  ' 2 ' / addEventListener to  addToCartIcon
+          addToCartIcon.setAttribute("onclick", "setItemLocal(event);");
+          // addToCartIcon.addEventListener("click", setItemLocal);
+          i++; //!   line  64
+        });
+  
+        moveSlidesRight();
+      });
+  }
+  
