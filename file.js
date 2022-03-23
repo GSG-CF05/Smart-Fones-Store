@@ -11,7 +11,7 @@ const splash = document.querySelector(".splash");
 document.addEventListener("DOMContentLoaded", (e) => {
   setTimeout(() => {
     splash.classList.add("display-none");
-  }, 3000);
+  }, 2000);
 });
 
 //                             slider
@@ -125,14 +125,14 @@ let arrayForPrice = [
           productsCards.appendChild(productCardDiv);
           let productCard = document.createElement("div");
           productCardDiv.appendChild(productCard);
-          productCard.setAttribute("class", "productCard");
+          productCard.setAttribute("class", "product-card");
           let productImg = document.createElement("img");
           productCard.appendChild(productImg);
-          productImg.setAttribute("class", "productImg");
+          productImg.setAttribute("class", "product-img");
           productImg.setAttribute("src", item.image);
           let productTitle = document.createElement("h4");
           productCard.appendChild(productTitle);
-          productTitle.setAttribute("class", "productTitle");
+          productTitle.setAttribute("class", "product-title");
           productTitle.textContent = item.phone_name;
           // !  price   and cart icon  continar
   
@@ -151,7 +151,7 @@ let arrayForPrice = [
   
           let addToCartIcon = document.createElement("img");
           //  addToCartIcon.src = "image/addToCart.svg";
-          addToCartIcon.src = "addToCart.png";
+          addToCartIcon.src = "images/addToCart.png";
   
           priceAndCartContinar.appendChild(addToCartIcon);
           addToCartIcon.setAttribute("class", "add-to-cart");
