@@ -3,16 +3,22 @@
 - **Figma link:**[here](https://www.figma.com/file/4KnQRIqQPOCFlBxLi7IfXx/Untitled?node-id=193%3A872)
 - **Live link:**
 - **API documentation:** 
-1- [here(github)](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
-2-[here(brands phone api)](api-mobilespecs.azharimm.site/v2/brands)
-3- [here (phone api)](https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2)
+1. [here(github)](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
+2. [here(brands phone api)](api-mobilespecs.azharimm.site/v2/brands)
+3. [here (phone api)](https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48?page=2)
+ 
 ##:space_invader: The problem:
 Because of the epidemic that the world witnessed (Covid 19), which led to the deterioration of the economy and the closure of millions of different shops, which called for the establishment of electronic stores.
 ##:wrench:description for the website:
 mobile store app. The idea of the project is a shop for selling mobile phones to all companies known in the world of mobile phones, where they move to the main menu of the site and add various devices of their types, issue and other additions, updates, deletions and various operations.
 ## :clipboard: The wireframes:
+![29b3d7cc4f6c70a9](https://user-images.githubusercontent.com/93891963/159891872-4f8d4e24-6c32-4b6f-93ae-065b0a05d8cd.jpg)
 ## :airplane: User Journey:
-For the first step, the user will visit the home page which it contains all the popular brands for mobiles. After choosing the brand he wants, a list of devices with the information for each device (the user maybe look for it) will appear. For the last step if he like the device he will click (add to cart) button, and enter the payment way he wants and the process will be done.
+- When you open the web application, the main page will appear. You can see a slider of pictures for the most beautiful phones, also you can see the available brands, in addition to a carsale of the latest phones that you can buy by clicking on the purchase icon.
+- When you click on one of the brands, it will take you to a page containing the phones available from this brand. You can buy through the purchase icon. If you want to return to the main page, use the back icon.
+- If you want to see the list of your purchases, click on the menu icon and then choose My Chart, it will take you to the page, and there you can remove from the list if you want.
+-  If you want to know more details about the site, you can click on the menu icon. Choose about us and it will take you to the page there. You can find out the details, you can navigate between the pages through the menu icon.
+- We wish you a pleasant shopping
 ## :rocket: User Stories:
 - As a user, you can enter the main page and choose the brand you want.
 - You can also see the latest versions of the phones.
