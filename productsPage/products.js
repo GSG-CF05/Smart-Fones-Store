@@ -79,7 +79,9 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands/" + params.brandSlug)
       addToCartIcon.setAttribute("class", "add-to-cart");
 
       //?  part  ' 2 ' / addEventListener to  addToCartIcon
-      addToCartIcon.addEventListener("click", setItemLocal); //!   line  64
+      addToCartIcon.addEventListener("click", setItemLocal); //!    line  89
+      search();  //!   line  121
+
     }
   });
 
@@ -114,4 +116,23 @@ function setItemLocal(e) {
       JSON.stringify(arrayLocalStorage)
     );
   }
+}
+
+ //? search any  mobile 
+ function search() {
+  let searchBox = document.querySelector(".search-input");
+  let cards = document.querySelectorAll(".product-item");
+  for (let i = 0; i < cards.length; i++) {
+    let input = searchBox.value.toUpperCase();
+    if (
+      cards[i].firstChild.nextElementSibling.textContent
+        .toUpperCase()
+        .includes(input)
+    ) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+  searchBox.addEventListener("keyup", search);
 }
