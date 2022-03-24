@@ -1,4 +1,11 @@
-// the body js
+// Show or hide the Drawer when pressing Hampurger menu or X
+function displayDrawer(){
+    if(document.getElementById("drawer").style.display == "none") {
+        document.getElementById("drawer").style.display = "block";
+    } else{
+        document.getElementById("drawer").style.display ="none";
+    }
+  }
 // create the elements container
 let container = document.createElement("div");
 container.classList.add("continar");
@@ -47,7 +54,7 @@ function show(){
         name_price.appendChild(mobname);
         // create pricec element
         let price = document.createElement("p");
-        price.innerHTML=cartItems[i]["mobilePrice"]+"$";
+        price.innerHTML=cartItems[i]["mobilePrice"]+" $";
         cartTotalPrice += parseInt(cartItems[i]["mobilePrice"]);
         price.classList.add("price");
         name_price.appendChild(price);
@@ -98,12 +105,12 @@ function show(){
     let container1 = document.createElement("div");
     container1.classList.add("total");
     let para = document.createElement("p");
-    para.innerHTML= "Total";
+    para.innerHTML= "Total : ";
     para.classList.add("text");
     container1.appendChild(para);
     let pricrContainer = document.createElement("p");
     pricrContainer.innerHTML = cartTotalPrice.toString()+"$";
-    pricrContainer.classList.add("text");
+    pricrContainer.classList.add("pricr-container");
     container1.appendChild(pricrContainer);
     let totalprice = document.createElement("button");
     totalprice.innerHTML= "Buy Now";
