@@ -14,41 +14,59 @@
     <title>ABOUT US</title>
 </head>
 <body>
-  <header>
     <div class="header">
       <a href="../index.html" class="logo"><i class="fa fa-angle-left"></i></a>
       <a href="#" onclick="displayDrawer()" class="logo"><i class="fa fas fa-bars"></i></a>
     </div>
-    <div id="drawer" style="display: none">
-      <div class="drawerMenu">
-        <div class="xDiv">
-          <i class="fa-solid fa-x" onclick="displayDrawer()"></i>
-        </div>
+    
+    <div class="blue-background">
+        <header>
+          <img src="../images/gadgets 1.png" />
+          <div class="list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../cartPage/cart.html">My Cart</a></li>
+              <li><a href="../aboutPage/about.html">About Us</a></li>
+          </div>
+      </header>
+      <div id="drawer" style="display: none">
+        <div class="drawerMenu">
+          <div class="xDiv">
+            <i class="fa-solid fa-x" onclick="displayDrawer()"></i>
+          </div>
 
-        <ul>
-          <li><i class="fa fa-home drawerI"></i> Home</li>
-          <li><i class="fa fa-shopping-bag drawerI"></i>My Cart</li>
-          <li><i class="fa fa-info-circle drawerI"></i>About Us</li>
-          <li>
-            <i class="fa-brands fa-facebook social"></i>
-            <i class="fa-brands fa-instagram social"></i>
-            <i class="fa-brands fa-twitter social"></i>
-          </li>
-        </ul>
+          <ul>
+            <li><i class="fa fa-home drawerI"></i><a href="../index.html">Home</a></li>
+            <li><i class="fa fa-shopping-bag drawerI"></i><a href="../cartPage/cart.html">My Cart</a></li>
+            <li><i class="fa fa-info-circle drawerI"></i><a href="../aboutPage/about.html">About Us</a></li>
+            <li>
+              <i class="fa-brands fa-facebook social"></i>
+              <i class="fa-brands fa-instagram social"></i>
+              <i class="fa-brands fa-twitter social"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="about">
+        <h2>About</h2>
+        <p class="about-text">Ultra Mobile is an electronic smart phone store that seeks to provide the best service and market the best product at the most appropriate prices and meet the requirements of the local and global market from modern technology to enrich the information technology sector.</p>       
+      
       </div>
     </div>
-  </header>
-  <div class="about">
-    <h2>About</h2>
-    <p class="about-text">Ultra Mobile is an electronic smart phone store that seeks to provide the best service and market the best product at the most appropriate prices and meet the requirements of the local and global market from modern technology to enrich the information technology sector.</p>       
-    <h2>Owners</h2>
-    <div class="owners">
-        
+    <div class="ownerss">
+      <h2>Owners</h2>
+      <div class="owners">
+          
+      </div>
     </div>
-    <h2>Our Message</h2>
-    <p class="message">Putting a distinct imprint in the world of technology and related devices.</p>
-    
-</div>
+    <div class="our-msg">
+      <h2>Our Message</h2>
+      <p class="message">Putting a distinct imprint in the world of technology and related devices.</p>
+    </div>
+    <div class="social-media">
+        <i class="fa-brands fa-facebook social"></i>
+        <i class="fa-brands fa-instagram social"></i>
+        <i class="fa-brands fa-twitter social"></i>
+    </div>
     <script src="about.js"></script>
 </body>
 </html>
