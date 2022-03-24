@@ -26,11 +26,14 @@ function showData(data) {
     image.src = data.avatar_url;
     
     owner.appendChild(image)
-    image.onclick = () => {
+    owner.onclick = () => {
         window.open(data.html_url)
     };
+    let para = document.createElement('p')
+    para.innerText = data.login;
+    owner.appendChild(para)
     owners.appendChild(owner)
-
+    
 }
 function showProfile(url) {
     window.open(url)
