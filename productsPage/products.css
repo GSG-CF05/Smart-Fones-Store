@@ -183,6 +183,8 @@ div.all-item {
   justify-content: space-around;
   align-items: center;
   padding: 0 2% 1.1rem 2%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .price {
   font-size: 0.9rem;
@@ -271,6 +273,10 @@ div.all-item {
 
   .product-name {
     margin-left: 12%;
+  }
+  .price-and-add-to-cartIcon {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .dollar {
     margin-right: 120px;
