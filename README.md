@@ -2,6 +2,7 @@
 ## :globe_with_meridians: LINKS:-
 - **Figma link:**[here](https://www.figma.com/file/4KnQRIqQPOCFlBxLi7IfXx/Untitled?node-id=193%3A872)
 - **Live link:**
+[here(Live Link)](https://gsg-cf05.github.io/smart-phone-store-team2/)
 - **API documentation:** 
     1. [here(github)](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
     2. [here(brands phone api)](api-mobilespecs.azharimm.site/v2/brands)
