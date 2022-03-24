@@ -68,6 +68,10 @@ li {
   margin-bottom: 12px;
 }
 
+#drawer a {
+  text-decoration: none;
+}
+
 .fa-info-circle {
   margin-bottom: 35px;
 }
@@ -130,6 +134,8 @@ li {
   }
 }
 .fade-in {
+  width: 70px;
+  height: 70px;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
@@ -175,50 +181,41 @@ li {
 /* slider resonsive styling*/
 @media screen and (min-width: 1024px) {
   .container {
-      position: relative;
-      
-      min-width: 1100px;
-      margin: 0 auto;
-      overflow: hidden;
-      min-height: 500px;
-      border-radius: 30px;
-      
-  }
+    position: relative;
 
+    min-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 500px;
+    border-radius: 30px;
+  }
 
   .slider img {
-      min-width: 1100px;
-      max-height: 35rem;
-      object-fit: cover;
-      height: 600px;
+    min-width: 1100px;
+    max-height: 35rem;
+    object-fit: cover;
+    height: 600px;
   }
- 
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
-      position: relative;
-      max-width: 800px;
-      width: 800px;
-      margin: 0 auto;
-      overflow: hidden;
-      min-height: 450px;
-      border-radius: 30px;
-      
+    position: relative;
+    max-width: 800px;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 450px;
+    border-radius: 30px;
   }
-
 
   .slider img {
-      max-width: 800px;
-      width: 800px;
-      max-height: 35rem;
-      object-fit: cover;
-      height: 450px;
+    max-width: 800px;
+    width: 800px;
+    max-height: 35rem;
+    object-fit: cover;
+    height: 450px;
   }
- 
 }
-
-
-
 
 /*                               brandsCards                              */
 h3 {
@@ -302,6 +299,12 @@ hr {
   font-size: 1rem;
   font-weight: 700;
 }
+.dollar {
+  width: 15px;
+  font-size: 0.9rem;
+  position: relative;
+  right: 70px;
+}
 
 .carousel {
   position: relative;
@@ -380,7 +383,10 @@ hr {
 .add-to-cart {
   width: 1.8rem;
 }
-
+.add-to-cart:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  transform: translate3D(0, -2px, 0);
+}
 /*                              media                  */
 @media (max-width: 1023px) {
   #social-media {
@@ -397,6 +403,10 @@ hr {
 @media (min-width: 1024px) {
   .fa-bars {
     display: none !important;
+  }
+  .fade-in {
+    width: 90px;
+    height: 90px;
   }
 
   h3,
