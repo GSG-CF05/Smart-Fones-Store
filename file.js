@@ -11,7 +11,7 @@ const splash = document.querySelector(".splash");
 document.addEventListener("DOMContentLoaded", (e) => {
   setTimeout(() => {
     splash.classList.add("display-none");
-  }, 2000);
+  }, 3500);
 });
 
 //                             slider
@@ -47,7 +47,7 @@ function nextSlide() {
   }
   slider.style.transform = `translateX(${-size * counter}px)`;
 }
-setInterval(nextSlide, 2000);
+setInterval(nextSlide, 3500);
 
 // Get the brand cards div
 let brandsCards = document.getElementById("brands-cards");
@@ -87,7 +87,7 @@ function fetchTopBrands() {
         brandsCards.appendChild(brandCard);
         brandCard.setAttribute(
           "href",
-          "/productspage/products.html?brandSlug=" + item.brand_slug
+          "./productspage/products.html?brandSlug=" + item.brand_slug
         );
         let brandTitle = document.createElement("h4");
         brandTitle.textContent = item.brand_name;
