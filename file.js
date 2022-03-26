@@ -87,7 +87,7 @@ function fetchTopBrands() {
         brandsCards.appendChild(brandCard);
         brandCard.setAttribute(
           "href",
-          "./productspage/products.html?brandSlug=" + item.brand_slug
+          "./productsPage/products.html?brandSlug=" + item.brand_slug
         );
         let brandTitle = document.createElement("h4");
         brandTitle.textContent = item.brand_name;
